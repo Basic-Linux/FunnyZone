@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/closedoor_ico.png</file>
+        <file>res/closeled_ico.png</file>
+        <file>res/fan_ico.png</file>
+        <file>res/humidity_ico.png</file>
+        <file>res/illumination_button_ico.png</file>
+        <file>res/opendoor_ico.png</file>
+        <file>res/openled_ico.png</file>
+        <file>res/temperature_button_ico.png</file>
+        <file>res/closedoor_ico2.png</file>
+        <file>res/closeled_ico2.png</file>
+        <file>res/fan_ico2.png</file>
+        <file>res/opendoor_ico2.png</file>
+        <file>res/openled_ico2.png</file>
+        <file>res/fan_ico3.png</file>
+    </qresource>
+</RCC>
