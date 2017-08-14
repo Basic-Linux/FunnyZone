@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/bottles/beer/reiao_blue.png</file>
+        <file>image/bottles/beer/reiao_green.png</file>
+        <file>image/bottles/beer/reiao_gwasi.png</file>
+        <file>image/bottles/beer/reiao_pink.png</file>
+        <file>image/bottles/beer/reiao_putao.png</file>
+        <file>image/bottles/beer/reiao_wine.png</file>
+        <file>image/bottles/drink/coco.png</file>
+        <file>image/bottles/drink/wanglaoji.png</file>
+        <file>image/bottles/drink/xuebi_guan.png</file>
+        <file>image/bottles/drink/xuebi_ping.png</file>
+        <file>image/bottles/milk/mengniu_he.png</file>
+        <file>image/bottles/milk/mengniu_suan.png</file>
+        <file>image/bottles/milk/mengniu_xiao.png</file>
+        <file>image/bottles/milk/yili_jingdian.png</file>
+        <file>image/bottles/water/kangshifu.png</file>
+        <file>image/bottles/water/kunlunshan.png</file>
+        <file>image/common/back.png</file>
+        <file>image/common/comBtn.png</file>
+        <file>image/common/onsale.png</file>
+        <file>image/common/payBtn_h.png</file>
+        <file>image/common/payBtn_v.png</file>
+        <file>image/common/PayCar.png</file>
+        <file>image/common/hand_pointerup.ico</file>
+        <file>qss/skin.qss</file>
+        <file>image/common/emty.png</file>
+        <file>image/common/background.png</file>
+        <file>image/common/bound.png</file>
+        <file>image/common/bound-right.png</file>
+        <file>image/common/bound-left.png</file>
+        <file>image/common/bound-down.png</file>
+        <file>image/common/bound-up.png</file>
+    </qresource>
+</RCC>

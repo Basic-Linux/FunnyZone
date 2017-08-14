@@ -1,0 +1,7 @@
+#include "qhttpserver.h"
+#include "qhttpconnection.h"
+#include "qhttprequest.h"
+#include "qhttpresponse.h"
+#include "qhttpserver.h"
+#include "qhttpserverapi.h"
+#include "qhttpserverfwd.h"

@@ -1,0 +1,15 @@
+#include "widget.h"
+#include <QApplication>
+#include "bc_serialport.h"
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    Widget w;
+    w.show();
+    bc_serialPort port;
+    port.setPort(Baudrate);
+    port.startCheckClock();
+
+    return a.exec();
+}

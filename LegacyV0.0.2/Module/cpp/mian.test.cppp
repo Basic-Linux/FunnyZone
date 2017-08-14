@@ -1,0 +1,13 @@
+#include "xmlparse.h"
+#include <QApplication>
+#include <QDebug>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    QMap<QString,QString> map;
+    map = XmlParse::getInfoList("C:/Users/Bc/Desktop/tmp/tmp/build-test-Desktop_Qt_5_7_0_MinGW_32bit-Debug/res.xml");
+    qDebug() << map.count();
+    qDebug() << map;
+    return a.exec();
+}

@@ -1,0 +1,74 @@
+QWidget
+{
+        border-image: url(:/image/common/background.png);
+}
+QLabel
+{
+        color: rgb(255, 0, 0);
+        border-image: url(:/image/common/emty.png);
+}
+/*主界面边框*/
+QLabel#label_Types
+{
+        border-image: url(:/image/common/bound-left.png);
+}
+QLabel#label_Cost
+{
+        border-image: url(:/image/common/bound-right.png);
+}
+/*购物车边框*/
+QLabel#label_price
+{
+        border-image: url(:/image/common/bound-left.png);
+}
+QLabel#label_name
+{
+        border-image: url(:/image/common/bound-left.png);
+}
+QLabel#label_pic
+{
+        border-image: url(:/image/common/bound-left.png);
+}
+QLabel#label_num
+{
+        border-image: url(:/image/common/bound.png);
+}
+QWidget#widget_CartLogo
+{
+    border-image: url(:/image/common/comBtn.png);
+}
+QPushButton#pushButtonReturn
+{
+    border-image: url(:/image/common/emty.png);
+}
+QWidget#widget_shopMain
+{
+        border-image: url(:/image/common/emty.png);
+}
+
+
+QWidget#widget_Title
+{
+        border-image: url(:/image/common/emty.png);
+}
+MenuUI#widget_List
+{
+        border-image: url(:/image/common/emty.png);
+}
+MenuUI#widget_Menu
+{
+        border-image: url(:/image/common/emty.png);
+}
+QLineEdit
+{
+        color: rgb(255, 255, 255);
+        border-image: url(:/image/common/emty.png);
+}
+QRadioButton
+{
+    border-image: url(:/image/common/emty.png);
+}
+QSpinBox
+{
+    border-image: url(:/image/common/emty.png);
+}

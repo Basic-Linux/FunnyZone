@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<res>
+	<dict>
+		<name>coco</name>
+		<path>:/image/bottles/drink/coco.png</path>
+	</dict>
+	<dict>
+		<name>xuebi_guan</name>
+		<path>:/image/bottles/drink/xuebi_guan.png</path>
+	</dict>	
+	<dict>
+		<name>xuebi_ping</name>
+		<path>:/image/bottles/drink/xuebi_ping.png</path>
+	</dict>
+	<dict>
+		<name>wanglaoji</name>
+		<path>:/image/bottles/drink/wanglaoji.png</path>
+	</dict>
+	<dict>
+		<name>mengniu_he</name>
+		<path>:/image/bottles/milk/mengniu_he.png</path>
+	</dict>
+	<dict>
+		<name>mengniu_xiao</name>
+		<path>:/image/bottles/milk/mengniu_xiao.png</path>
+	</dict>
+	<dict>
+		<name>mengniu_suan</name>
+		<path>:/image/bottles/milk/mengniu_suan.png</path>
+	</dict>
+	<dict>
+		<name>yili_jingdian</name>
+		<path>:/image/bottles/milk/yili_jingdian.png</path>
+	</dict>
+	<dict>
+		<name>kangshifu</name>
+		<path>:/image/bottles/water/kangshifu.png</path>
+	</dict>
+	<dict>
+		<name>kunlunshan</name>
+		<path>:/image/bottles/water/kunlunshan.png</path>
+	</dict>
+</res>

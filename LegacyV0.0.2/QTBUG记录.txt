@@ -1,0 +1,2 @@
+1 QT中 如果WIDGET 嵌套 WIDGET 那么子WIDGET和父亲WIDGET之间必须有空隙，
+否则子类以及孙子类中paintevent都不能正常使用

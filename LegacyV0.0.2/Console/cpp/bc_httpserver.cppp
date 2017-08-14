@@ -1,0 +1,79 @@
+#include "bc_httpserver.h"
+
+bc_HttpServer::bc_HttpServer(QObject *parent) : QObject(parent)
+{
+    server = new QHttpServer(this);
+    connect(server, SIGNAL(newRequest(QHttpRequest*, QHttpResponse*)),
+            this, SLOT(handleRequest(QHttpRequest*, QHttpResponse*)));
+
+    qDebug() << server->listen(QHostAddress::Any, HTTPPORT);
+
+}
+
+bc_HttpServer::~bc_HttpServer()
+{
+//    delete m_resp;
+//    delete m_req;
+//    delete server;
+}
+
+void bc_HttpServer::handleRequest(QHttpRequest *req, QHttpResponse *resp)
+{
+    m_req = req;
+    m_resp = resp;
+    httpDeal(m_req,m_resp);
+}
+
+void bc_HttpServer::httpDeal(QHttpRequest *req, QHttpResponse *resp)
+{
+    QRegExp exp("^/([0-9]+$)");
+    if (exp.indexIn(req->path()) == -1)
+    {
+        resp->writeHead(403);
+        resp->end(QByteArray("You aren't allowed here!"));
+        /// @todo There should be a way to tell request to stop streaming data
+        return;
+    }
+
+    QString content = exp.capturedTexts()[1];
+
+    int CoreNum = content.toInt();
+    qDebug() << CoreNum;
+
+    switch (CoreNum)
+    {
+    case 0:
+        //执行关机操作；
+        //随后发送一条关闭信息
+        sendHttpMsg("I have turned off mySelf",200,req,resp);
+        break;
+    default:
+        //如果都不是，则回发错误信息码
+        sendHttpMsg("Command/File Not Found",404,req,resp);
+        break;
+    }
+    qDebug() << __func__;
+}
+
+void bc_HttpServer::sendHttpMsg(QString content,int ErrorCode, QHttpRequest *req, QHttpResponse *resp)
+{
+    resp->setHeader("Content-Type", "text/html");
+    resp->writeHead(ErrorCode);
+
+    QString bodyStart = tr("<html><head><title>SmartSller App</title></head><body><h1>%1: %2!</h1><p>").arg(ErrorCode).arg(content);
+    resp->write(bodyStart.toUtf8());
+    connect(req, SIGNAL(end()), this, SLOT(accumulate()));
+    connect(req, SIGNAL(end()), this, SLOT(reply()));
+    resp->deleteLater();
+}
+
+void bc_HttpServer::bc_HttpServer::accumulate()
+{
+    //m_resp->write(data);
+    qDebug("%s");
+}
+
+void bc_HttpServer::bc_HttpServer::reply()
+{
+    m_resp->end(QByteArray("</p></body></html>"));
+}
